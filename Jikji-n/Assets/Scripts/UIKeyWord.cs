@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UIKeyWord : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private TextMeshPro keywordText;
 
-    // Update is called once per frame
-    void Update()
+    public void SetText(string text)
     {
-        
+        keywordText.text = text;
     }
 }

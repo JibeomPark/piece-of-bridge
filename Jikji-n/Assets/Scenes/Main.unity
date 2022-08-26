@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f72a01b8aeb63b4ab5fa2a44ed8de62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keywordText: {fileID: 0}
 --- !u!1 &125555827
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f72a01b8aeb63b4ab5fa2a44ed8de62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keywordText: {fileID: 0}
 --- !u!1 &886590485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f72a01b8aeb63b4ab5fa2a44ed8de62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keywordText: {fileID: 0}
 --- !u!114 &886590487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2145,10 +2148,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaseList: 0000000001000000
-  keyWordList:
-  - {fileID: 100592219}
-  - {fileID: 828425013}
-  - {fileID: 886590486}
+  keywordList:
+  - {fileID: 0}
+  coinInfoList:
+  - list:
+    - index: 0
+      text: "\uC9C1\uC9C0"
+    - index: 1
+      text: "\uC2EC\uCCB4"
+    - index: 2
+      text: "\uC694\uC808"
+  - list:
+    - index: 0
+      text: "\uB85C\uC544"
+    - index: 1
+      text: "\uD558\uACE0"
+    - index: 2
+      text: "\uC2F6\uB2E4"
 --- !u!1 &2010354200
 GameObject:
   m_ObjectHideFlags: 0
