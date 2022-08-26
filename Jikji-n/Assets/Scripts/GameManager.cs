@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<CoinInfoList> coinInfoList;
 
     private Gamephase currentPhase = Gamephase.None;
+    private int coinStageInfoIndex = 0;
+    private int coinInfoIndex = 0;
 
 
     void Update()
@@ -69,8 +71,20 @@ public class GameManager : MonoBehaviour
         currentPhase = phase;
     }
 
-    public void SetKeyWordText(int index, string keyword)
+    public void SetKeyWordText()
     {
-        keywordList[index].SetText(keyword);
+        if (coinStageInfoIndex >= coinInfoList.Count)
+            return;
+
+        string keyword = coinInfoList[coinStageInfoIndex].list[coinInfoIndex].text;
+        coinInfoIndex++;
+
+        if(coinInfoIndex >= coinInfoList[coinStageInfoIndex].list.Count)
+        {
+            coinStageInfoIndex++;
+            coinInfoIndex = 0;
+        }
+
+        keywordList[coinInfoIndex].SetText(keyword);
     }
 }
