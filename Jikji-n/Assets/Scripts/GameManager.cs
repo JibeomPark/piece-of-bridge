@@ -77,14 +77,14 @@ public class GameManager : MonoBehaviour
             return;
 
         string keyword = coinInfoList[coinStageInfoIndex].list[coinInfoIndex].text;
+        keywordList[coinInfoIndex].SetText(keyword);
         coinInfoIndex++;
 
         if(coinInfoIndex >= coinInfoList[coinStageInfoIndex].list.Count)
         {
-            coinStageInfoIndex++;
             coinInfoIndex = 0;
+            coinStageInfoIndex++;
         }
 
-        keywordList[coinInfoIndex].SetText(keyword);
     }
 }
